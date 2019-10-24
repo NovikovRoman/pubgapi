@@ -1,0 +1,24 @@
+{
+  "name": "noroman/pubg-api-client",
+  "description": "API client for pubg API",
+  "type": "library",
+  "require": {
+    "php": ">=7.1.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Novikov Roman",
+      "email": "service.for.roman@gmail.com",
+      "role": "developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "PubgApi\\": "src/"
+    }
+  }
+}
