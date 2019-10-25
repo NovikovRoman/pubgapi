@@ -6,7 +6,6 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
-use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use PubgApi\Exception\ExceptionNotFound;
 use PubgApi\Exception\ExceptionTooManyRequests;
@@ -64,7 +63,7 @@ class PubgClient
                 break;
 
             case 401:
-                throw new ExceptionUnauthorized('Forbidden.', $request, $resp);
+                throw new ExceptionUnauthorized('Unauthorized.', $request, $resp);
                 break;
 
             case 404:
